@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Tyuiu.KorobeinikovaDD.Sprint1.Task2.V24.Lib;
+using Tyuiu.KorobeinikovaDD.Sprint1.Task3.V14.Lib;
 DataService ds = new DataService();
 Console.Title = "Спринт #1 | Выполнила: Коробейникова Д.Д. | ПКТб-24-1";
 Console.WriteLine("***************************************************************************");
@@ -11,23 +11,21 @@ Console.WriteLine("* Выполнила: Коробейникова Дарья �
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* УСЛОВИЕ:                                                                *");
 Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные  *");
-Console.WriteLine("* и вычисляет квадрат разности                                            *");
+Console.WriteLine("* и определяет число, полученное выписыванием в обратном порядке цифр     *");
 Console.WriteLine("*                                                                         *");
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-int x, y;
-Console.WriteLine("Введите значение x:");
-x = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Введите значение у:");
-y = Convert.ToInt32(Console.ReadLine()); 
+double number;
+Console.WriteLine("Введите трехзначное число:");
+number = Convert.ToDouble(Console.ReadLine());
 
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
-Console.WriteLine("Квадрат разницы чисел х, у: " + ds.CalculateDiffSquare(x, y));
+Console.WriteLine("Число, полученное выписыванием в обратном порядке цифр: " + ds.ReverseNumber(number));
 
 Console.ReadKey();
+
