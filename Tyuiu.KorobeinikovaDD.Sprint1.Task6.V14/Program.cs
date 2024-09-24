@@ -1,21 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Tyuiu.KorobeinikovaDD.Sprint1.Task5.V6.Lib;
+using System.Text.RegularExpressions;
+using Tyuiu.KorobeinikovaDD.Sprint1.Task6.V14.Lib;
 DataService ds = new DataService();
-
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-int k;
-Console.WriteLine("Введите значение числа k:");
-k = Convert.ToInt32(Console.ReadLine());
-
+string value;
+Console.WriteLine("Введите текст:");
+value = Console.ReadLine();
 
 
 Console.WriteLine("***************************************************************************");
-Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+Console.WriteLine("* РЕЗУЛЬТАТ ПРОВЕРКИ:                                                     *");
 Console.WriteLine("***************************************************************************");
-Console.WriteLine("Значение переменной n:" + ds.Calculate(k));
+Console.WriteLine(ds.CheckLowerCaseRusLetters(value));
 
-Console.ReadKey(); 
+Console.ReadKey();

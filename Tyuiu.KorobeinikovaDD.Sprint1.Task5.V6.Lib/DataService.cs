@@ -9,7 +9,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint1.Task5.V6.Lib
         {
             if (k % 7 == 0) 
             { return 7; }
-            else; { return (k % 7); }
+            else { return (k % 7); }
         }
     }
 }
