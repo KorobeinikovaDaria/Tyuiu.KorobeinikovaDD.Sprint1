@@ -1,20 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Text.RegularExpressions;
-using Tyuiu.KorobeinikovaDD.Sprint1.Task6.V14.Lib;
+using Tyuiu.KorobeinikovaDD.Sprint1.Task7.V9.Lib;
 DataService ds = new DataService();
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-string value;
-Console.WriteLine("Введите текст:");
-value = Console.ReadLine();
+double x;
+x = Convert.ToDouble(Console.ReadLine());
+double y;
+y = Convert.ToDouble(Console.ReadLine());
 
 
 Console.WriteLine("***************************************************************************");
-Console.WriteLine("* РЕЗУЛЬТАТ ПРОВЕРКИ:                                                     *");
+Console.WriteLine("* РЕЗУЛЬТАТ:                                                     *");
 Console.WriteLine("***************************************************************************");
-Console.WriteLine(ds.CheckLowerCaseRusLetters(value));
+Console.WriteLine(ds.Calculate(x, y));
 
 Console.ReadKey();
